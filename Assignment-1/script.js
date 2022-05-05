@@ -7,11 +7,11 @@ var table, tBody, tHead;
     table.appendChild(tBody);
     addRow("Name", "Age", "DOB", "E-mail", "Company");
     tHead.setAttribute("class", "text-dark");
-    addRow("Name", "Age", "DOB", "E-mail", "Company");
-    addRow("Name", "Age", "DOB", "E-mail", "Company");
-    addRow("Name", "Age", "DOB", "E-mail", "Company");
-    addRow("Name", "Age", "DOB", "E-mail", "Company");
-    addRow("Name", "Age", "DOB", "E-mail", "Company");
+    addRow("ABC XYZ", 20, "01-Jan-2001", "abc@xyz.com", "POI");
+    addRow("DEF UVW", 21, "02-Feb-2002", "def@uvw.com", "UYT");
+    addRow("GHI RST", 22, "03-Mar-2003", "ghi@rst.com", "REW");
+    addRow("JKL OPQ", 23, "04-Apr-2004", "jkl@opq.com", "QAS");
+    addRow("MNO XYZ", 24, "05-May-2005", "mno@xyz.com", "DFG");
     document.body.append(table);
     table.setAttribute("class", "table table-striped table-bordered text-center")
     document.body.setAttribute("class", "m-5");
