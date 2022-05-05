@@ -1,23 +1,21 @@
-var tBody, table, tHead;
-
-
+var table, tBody, tHead;
 (function() {
-   
     table = document.createElement('table');
     tBody = document.createElement('tbody');
     tHead = document.createElement('thead');
-    table.append(tHead);
-    table.append(tBody);
+    table.appendChild(tHead);
+    table.appendChild(tBody);
     addRow("Name", "Age", "DOB", "E-mail", "Company");
-    table.setAttribute("class", "text-dark");
-    addRow("Name", "Age", "DOB", "E-mail", "Company");
-    addRow("Name", "Age", "DOB", "E-mail", "Company");
+    tHead.setAttribute("class", "text-dark");
     addRow("Name", "Age", "DOB", "E-mail", "Company");
     addRow("Name", "Age", "DOB", "E-mail", "Company");
     addRow("Name", "Age", "DOB", "E-mail", "Company");
-    table.setAttribute("class", "table table-striped table-bordered text-center ms-5 mt-5 me-4")
-    var body = document.getElementsByTagName("body");
+    addRow("Name", "Age", "DOB", "E-mail", "Company");
+    addRow("Name", "Age", "DOB", "E-mail", "Company");
     document.body.append(table);
+    table.setAttribute("class", "table table-striped table-bordered text-center")
+    document.body.setAttribute("class", "m-5");
+    document.getElementsByTagName('tr')[0].style.fontWeight="bold"
 })();
 
 function addRow (name, age, dob, email, company) {
@@ -37,10 +35,13 @@ function addRow (name, age, dob, email, company) {
     td3.appendChild(dobNode);
     td4.appendChild(emailNode);
     td5.appendChild(companyNode);
-    tr.append(td1);
-    tr.append(td2);
-    tr.append(td3);
-    tr.append(td4);
-    tr.append(td5);
-    tBody.append(tr);
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+    tr.appendChild(td5);
+    tBody.appendChild(tr);
 }
+
+
+
